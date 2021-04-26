@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    ol li {
+      counter-increment: kale;
+    }
+
+    ol li:before {
+      content: counter(kale) "."
+    }
+
+    ol {
+      list-style: none;
+      counter-reset: kale;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Styling Ordered Lists with CSS Counters!</h1>
+      <div class="list-counter">
+        <ol>
+          <li>Stops</li>
+          <li>Drops</li>
+          <li>Roll</li>
+        </ol>
+      </div>
+      <div class="link">
+        <a href="index.html">Home</a><br>
+        <a href="nested.html">Nested Lists</a>
+      </div>
+  </div>
+</body>
+
+</html>

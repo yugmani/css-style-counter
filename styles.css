@@ -1,0 +1,35 @@
+wbody {
+  background-color: lightgray;
+  /* color: white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70vw;
+  height: 60%vh;
+  padding: 15px;
+}
+
+a {
+  margin-bottom: 15px;
+  padding: 10px 0px;
+  text-decoration: none;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.list-counter {
+  background-color: silver;
+  margin-top: 20px;
+}
+
+li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

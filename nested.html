@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Lists</title>
+
+  <style>
+    ol li {
+      counter-increment: cupcake;
+      list-style: none;
+    }
+
+    ol li:before {
+      content: counters(cupcake, ".") " ";
+      /* Whatever custom styles you want here */
+      color: hotpink;
+      font-weight: bold;
+      font-family: cursive;
+    }
+
+    ol {
+      padding-left: 32px;
+      counter-reset: cupcake;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h3>Styling Ordered Lists with CSS Counters!</h1>
+      <div class="list-counter">
+        <ol>
+          <li>Welcome to web school!</li>
+          <li>HTML
+            <ol>
+              <li>What are tags anyway?</li>
+              <li>The truth about DOM</li>
+            </ol>
+          </li>
+          <li>
+            CSS
+            <ol>
+              <li>Wallpaper of the Web</li>
+              <li>Box Model Mayhem
+                <ol>
+                  <li>Padding</li>
+                  <li>Border</li>
+                  <li>Margin</li>
+                </ol>
+              </li>
+              <li>Specificity as a service</li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+      <div class="link">
+        <a href="index.html">Home</a><br>
+        <a href="counter-list.html">CSS Counter</a>
+      </div>
+  </div>
+</body>
+
+</html>
